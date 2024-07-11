@@ -1,0 +1,49 @@
+html, body{
+  font-family: var(--font);
+  font-weight: var(--font-weight);
+  font-size: var(--font-size);
+  color: var(--text-color);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.container{
+  max-width: 1639px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@include laptop(){
+  .container{
+  max-width: 1054px;
+  padding: 0 15px;
+  margin: 0 auto;
+  }
+}
+
+@include display(){
+  .container {
+    max-width: 1280px;
+    padding: 0 15px;
+  }
+}
+
+@include tablets(){
+  .container{
+    width: 100%;
+  }
+}
+
+@include mobile(){
+  .container{
+    width: 100%;
+  }
+}
+
+@include mobile-xs(){
+  .container{
+    width: 100%;
+  }
+}

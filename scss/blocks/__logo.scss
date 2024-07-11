@@ -1,0 +1,26 @@
+.logo{
+  height: 40px;
+  width: 240px;
+}
+
+//Responsive
+@include tablets(){
+  .logo{
+    height: 20px;
+    width: 180px;
+  }
+}
+
+@include mobile(){
+  .logo{
+    width: 200px;
+    height: 30px;
+  }
+}
+
+@include mobile-xs(){
+  .logo{
+    width: 160px;
+    height: 20px;
+  }
+}

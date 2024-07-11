@@ -1,0 +1,45 @@
+.select-menu{
+  display: none;
+  cursor: pointer;
+  text-align: center;
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+
+  li{
+    border-bottom: 1px solid var(--product-bg-color);
+
+    &:hover{
+      background-color: var(--accent-red);
+      color: var(--white);
+    }
+  }
+}
+
+.select{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  padding: 10px 40px;
+  gap: 10px;
+  background-color: var(--accent-red);
+  position: relative;
+
+  p{
+    font-weight: 700;
+    color: var(--white);
+  }
+  img{
+    width: 13px;
+    height: 6.5px;
+  }
+}

@@ -1,0 +1,30 @@
+.nav{
+  display: grid;
+  grid-template-columns: 1fr auto 2fr;
+  gap: 200px;
+}
+
+//Responsive
+@include laptop(){
+  .nav{
+    grid-template-columns: 1fr  2fr;
+    gap: 100px;
+  }
+}
+@include tablets(){
+  .nav{
+    grid-template-columns: 1fr  2fr;
+    gap: 20px;
+  }
+}
+@include mobile(){
+  .nav{
+    display: flex;
+  }
+}
+
+@include mobile-xs(){
+  .nav{
+    display: flex;
+  }
+}

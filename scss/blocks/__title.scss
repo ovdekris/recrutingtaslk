@@ -1,0 +1,43 @@
+.title{
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 450;
+    background: linear-gradient(90.01deg, #111111 -8.85%, #B1B1B1 58.84%, #696969 91.39%, #B1B1B1 116.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+
+@include laptop(){
+  .title{
+    h1{
+      font-size: 40px;
+    }
+  }
+}
+
+@include tablets(){
+  .title{
+    h1{
+      font-size: 35px;
+    }
+  }
+}
+
+@include mobile(){
+  .title{
+    h1{
+      font-size: 30px;
+    }
+  }
+}
+
+@include mobile-xs(){
+  .title{
+    h1{
+      font-size: 28px;
+    }
+  }
+}

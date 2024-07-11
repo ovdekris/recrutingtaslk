@@ -1,0 +1,31 @@
+.nav-list {
+  display: flex;
+  gap: 65px;
+  font-size: 16px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link--active {
+  border-bottom: 1px solid black;
+}
+
+.nav-link--products {
+  font-weight: 700;
+}
+
+// Responsive
+@include mobile() {
+  .nav-list {
+    display: none;
+  }
+}
+
+@include mobile-xs() {
+  .nav-list {
+    display: none;
+  }
+}

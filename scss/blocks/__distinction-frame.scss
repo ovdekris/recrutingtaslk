@@ -1,0 +1,64 @@
+.distinction__frame {
+  margin: 30px 0 60px 0;
+  color: var(--product-text-color);
+}
+
+.distinction__frame-item {
+  display: flex;
+  margin-bottom: 30px;
+  margin-left: 80px;
+  align-items: center;
+}
+
+.distinction__frame-number {
+  margin-right: 20px;
+  background-color: var(--white);
+  box-shadow: 0 1px 9px 0 #00000040;
+  padding: 10px 17px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Responsive */
+@include laptop() {
+  .distinction__frame {
+    margin: 30px 0 65px 0;
+  }
+  .distinction__frame-item {
+    margin-left: 30px;
+  }
+  .distinction__frame-number {
+    margin-right: 10px;
+  }
+  .distinction__frame-desc {
+    font-size: 18px;
+  }
+}
+
+@include display() {
+  .distinction__frame {
+    margin: 30px 0 100px 0;
+  }
+  .distinction__frame-item {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    align-items: center;
+  }
+}
+
+@include mobile-xs() {
+  .distinction__frame {
+    margin: 30px 0 10px 0;
+  }
+  .distinction__frame-item {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,136 @@
+.products {
+  position: relative;
+  background-color: var(--bg-color);
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//Dropdown
+.products__dropdown {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.products__dropdown-desc {
+  color: var(--product-text-color);
+  font-weight: 450;
+  height: 46px;
+  border: 1px solid var(--accent-red);
+  padding: 10px;
+}
+
+.products__dropdown-select .select {
+  height: 46px;
+  padding: 10px 40px;
+  gap: 10px;
+  background-color: var(--accent-red);
+  position: relative;
+}
+
+.products__dropdown-select .select p {
+  font-weight: 700;
+  color: var(--white);
+}
+
+.products__dropdown-select .select img {
+  width: 13px;
+  height: 6.5px;
+}
+
+//Content
+.products__content {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products__item {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--product-bg-color);
+  width: 371px;
+  height: 350px;
+  margin: 40px 40px 0 0;
+}
+.products__item p {
+  color: var(--product-text-color);
+  font-size: 31px;
+  font-weight: 450;
+}
+
+.products__dropdown-select {
+  position: relative;
+  z-index: 1;
+}
+
+.products__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+//Responsive
+@include laptop() {
+  .products__item {
+    width: 300px !important;
+    height: 290px !important;
+    margin: 20px 20px 0 0 !important;
+  }
+}
+
+@include display() {
+  .products__item {
+    width: 280px;
+    height: 270px;
+    margin: 20px 20px 0 0;
+  }
+}
+
+@include bg-1700() {
+  .products__item {
+    width: 320px;
+    height: 310px;
+    margin: 30px 30px 0 0;
+  }
+}
+
+@include tablets() {
+  .products__item {
+    width: 220px;
+    height: 230px;
+    margin: 20px 20px 0 0 !important;
+  }
+}
+
+@include mobile() {
+  .products__item {
+    margin: 0 auto 20px auto !important;
+    width: 80vw;
+    height: 380px;
+  }
+}
+
+@include mobile-xs() {
+  #products {
+    padding-top: 70px;
+  }
+
+  .products__item {
+    margin: 0 auto 20px auto !important;
+    width: 70vw;
+    height: 240px;
+  }
+
+  .products__dropdown-desc {
+    font-size: 14px;
+  }
+
+  .products__content {
+    margin-top: 70px;
+  }
+}
